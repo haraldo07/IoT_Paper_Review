@@ -1,0 +1,56 @@
+
+\documentclass[12pt]{article}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{indentfirst}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+\title{\huge{\textbf{\textit{Future of Gaming?}}}}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\section*{Summary}
+\hspace{1cm}
+\textsc{Cloud Gaming}, renders an interactive gaming application remotely in the cloud and streams the scenes as a video sequence back to the player over the
+internet. This paper talks about the recent advancements in Cloud Gaming, by going through its architecture and\newline measuring the performances, using \textsc{Onlive} as a representative, and therefore concludes that Cloud Gaming is an advantage for less powerful computational devices that are otherwise \newline incapable of running high-quality games.This Cloud System protocol is analyzed using \newline\textsc{Wireshark}. The results have revealed the potential of cloud gaming as well as the critical challenges that it will face in its development.
+
+\section*{Key Contribution}
+\hspace{1cm}
+\textsc{Cloud Gaming} reduces customer support costs since the computational hardware is now under the cloud gaming provider’s full control,
+and offers better digital rights management (DRM) since the game code is not directly executed on a customer’s local device. \newline\textsc{Computational Offloading} played a very important role, which led to the idea of Cloud gaming which tries to reduce user access latencies with strategically placed \textsc{Cloud Data Centers.}
+
+\section*{My views on Architecture}
+\hspace{1cm}
+When you look at the framework design, first, the user interacts through a \textsl{Thin Client} pc or mobile phone then to \textsl{Game Logic} which checks the action of the user. After the check it goes to the \textsl{GPU Rendering} where the game world renders and sends the rendered scene to the \textsl{Video Encoder}. The encoder compresses it and sends it to the \textsl{Video Streaming Module} which delivers the stream back to the Thin Client, which decodes and displays the video frames to the gamer. The issue here is that when the game is locally running, and when running through a network platform, the image and video quality drops drastically while running in internet of a bandwidth setting which is more than recommended.
+
+\section*{Agreements, Pitfalls and Fallacies}
+\begin{tabular}{|p{2.2in}|p{1.5in}|p{2.2in}|}\hline
+\Centering{\textit{Views}} & \Centering{\textit{Agreement}} & \Centering{\textit{Reason}}\\\hline
+ \hline
+ Interaction delay, must be kept as short as possible in order to provide a
+rich experience to cloud game players.\newline & \small{\textbf{Strongly Agree}} & If the delay is just more than 100ms, it will totally ruin the gamers' mood to continue \newline playing it. \\
+\hline
+ The interaction delay was only an issue for multiplayer online
+gaming systems, and was \newline generally not considered for single player
+games.\newline & \small{\textbf{Strongly Disagree}} & Delay is still a delay. Everyone would hate to play even offline single player games if there is a delay. \\ 
+ \hline
+ Public clouds enables lower implementation costs and higher
+scalability, whereas a private cloud may offer better \newline performance
+and customization that fully unleash the potential of
+the cloud for gaming. & {\textbf{Agree to some \newline extent}} & It is not necessary that public clouds enable lower implementation costs than private cloud. A cheap private cloud can be used which may not even offer better performance. Also there are public cloud servers which are too expensive that dedicates the whole cloud only for gaming.\newline \\ 
+ \hline
+\end{tabular} \newline\newline
+\section*{Submission made by}
+\setlength{\parindent}{20pt}
+\large{\textsl{Name: HARISH R}}\\
+
+\large{\textsl{Reg No: 21011101046}}\\
+
+\large{\textsl{Class/Sec: AI & DS – A}}\\
+
+\end{document}
